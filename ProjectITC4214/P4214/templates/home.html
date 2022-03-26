@@ -1,13 +1,19 @@
-{% url 'home' %}
+{% extends 'header.html' %}
+
+{% block content %}
 
 <div>
     {% for c in clothes %}
-    <div>
-        <li>      
+    <div class="items">
+        <li class="list-group-item">      
             <a href = "{% url 'clothes_detail' c.id %}">
+                <img src="{{ c.img_url }}" width=80%%>
                 {{ c.type|capfirst }}
+                {{ c.size|capfirst }}     
             </a>
         </li>
     </div>
-{% endfor %}
+    {% endfor %}
 </div>
+
+{% endblock %}

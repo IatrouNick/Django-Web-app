@@ -1,0 +1,35 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  text-align: center;
+}
+
+
+
+.items{
+    margin-left: 25%;
+    margin-right: 25%;
+
+}
+.list-group-item {
+  
+  width: 50%;
+  float: left;
+}
+
+a {
+  display: block;
+  border: 0.1px solid;
+  margin: .25em;
+}
+
+a:hover {
+  background-color: silver;
+}
+
+a:link, a:visited, a:hover, a:active {
+  text-decoration: none;
+}

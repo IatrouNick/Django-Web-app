@@ -1,4 +1,5 @@
 from django.db import models
+from django.templatetags.static import static
 
 # Create your models here.
 
@@ -14,4 +15,7 @@ class Clothes(models.Model):
     size = models.CharField(max_length=2, choices=SIZE_CHOICES)
     price = models.DecimalField(max_digits = 5,decimal_places = 2)
 
+    @property
+    def img_url(self):
+        return static("images/{}.jpg".format(self.type))
      

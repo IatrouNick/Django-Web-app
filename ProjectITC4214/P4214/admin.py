@@ -5,3 +5,4 @@ from .models import Clothes
 @admin.register(Clothes)
 class ClothesAdmin(admin.ModelAdmin):
     list_display = ['id','type','size','price']
+

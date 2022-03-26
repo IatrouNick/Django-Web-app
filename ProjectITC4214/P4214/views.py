@@ -17,3 +17,4 @@ def clothes_detail(request, clothes_id):
     return render(request, 'clothes_detail.html', {
         'clothes' : clothes,
         })
+    
