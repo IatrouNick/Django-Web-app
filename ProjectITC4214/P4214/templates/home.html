@@ -1,0 +1,13 @@
+{% url 'home' %}
+
+<div>
+    {% for c in clothes %}
+    <div>
+        <li>      
+            <a href = "{% url 'clothes_detail' c.id %}">
+                {{ c.type|capfirst }}
+            </a>
+        </li>
+    </div>
+{% endfor %}
+</div>
