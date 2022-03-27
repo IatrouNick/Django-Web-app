@@ -1,19 +1,26 @@
-{% extends 'header.html' %}
+{% extends 'headerFooter.html' %}
 
 {% block content %}
 
-<div>
-    {% for c in clothes %}
-    <div class="items">
-        <li class="list-group-item">      
-            <a href = "{% url 'clothes_detail' c.id %}">
-                <img src="{{ c.img_url }}" width=80%%>
-                {{ c.type|capfirst }}
-                {{ c.size|capfirst }}     
-            </a>
-        </li>
-    </div>
-    {% endfor %}
-</div>
 
+<br class="choices">
+  <div id="page-container">
+      <div id="content-wrap">
+         {% for c in clothes %}
+            <div class="items">
+                <li class="list-group-item">      
+                    <a href = "{% url 'clothes_detail' c.id %}" class="list-group-item list-group-item-action list-group-item-primary">
+                    <img src="{{ c.img_url }}" width=100%%>
+                   {{ c.type|capfirst }}
+                  {{ c.size|capfirst }}     
+                    </a>
+                </li>
+            </div>
+        {% endfor %}
+        </div>
+    </div>
+<br class="choices">
 {% endblock %}
+
+
+
