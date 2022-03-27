@@ -18,17 +18,16 @@
   <header>
     <nav id="navbar_top" class="navbar navbar-expand-lg navbar-dark bg-dark">
       <div class="container-fluid">
-        <div class="collapse navbar-collapse" id="main_nav">
-          <ul class="navbar-nav mr-auto">
-            <li class="nav-item"><a class="nav-link" href="home.html" style="font-size:30px"> Home </a></li>
+        
+            <div class="navbar-header">
+              <a class="navbar-brand" id="title">FashionX</a>
+            </div>
+          <ul class="nav navbar-nav navbar-right">
+            <li class="nav-item"><a class="nav-link" href={% url 'home' %} style="font-size:30px"> Home </a></li>
             <li class="nav-item"><a class="nav-link" href="about.html" style="font-size:30px"> About</a></li>
-          </ul>
-        </div>
+          </ul> 
         
       </div>
-      <div class="navbar-header">
-            <a class="navbar-brand" style="font-size: 45px">FashionX</a>
-        </div>
     </nav>
  
     <!--CAROUSEL START-->

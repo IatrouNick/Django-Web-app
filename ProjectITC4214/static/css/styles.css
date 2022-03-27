@@ -164,23 +164,12 @@ body {
 
 /*Styles for indexpage */
 
-#logo {
-  width: 3%;
-  position: absolute;
-  transform: translateX(2500%);
-}
-
-
-
-.navbar-header {
-  position: absolute;
-  bottom: 5%;
-  color: rgb(255, 255, 255); 
+#title{
+  font-size: 5em;
+  color: aliceblue;
   text-align: center;
-
-  padding-left: 43%;
-  
 }
+
 
 .form-group {
   margin-left: 1%;
