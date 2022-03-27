@@ -87,9 +87,9 @@ body {
   color: white;
 }
 
-.google {
-  background: #dd4b39;
-  color: white;
+.instagram {
+  background: #e0225b;
+  color: rgb(114, 66, 66);
 }
 
 .linkedin {
@@ -108,13 +108,13 @@ body {
 
 /* Styles for CAROUSEL - Start */
 
+
 .carousel-item{
-  
-   width: 100%;
-   height: auto;
-   margin-left: 25%;
+    width: 100%;
+    height: auto;
 
 }
+
 /* Styles for CAROUSEL - End */
 
 
@@ -165,7 +165,7 @@ body {
 /*Styles for indexpage */
 
 #title{
-  font-size: 5em;
+  font-size: 2em;
   color: aliceblue;
   text-align: center;
 }

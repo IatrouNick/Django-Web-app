@@ -1,8 +1,13 @@
-{% url 'clothes_detail' clothes.id %}
+{% extends 'headerFooter.html' %}
 
-<h3>{{ clothes.type|capfirst }}</h3>
-<h3>{{ clothes.size|capfirst }}</h3>
-<h3>{{ clothes.price|capfirst }}</h3>
+{% block content %}
 
+<br class="choices">
+<h1>{{ clothes.type|capfirst }}</h1>
+<h1>{{ clothes.size|capfirst }}</h1>
+<h1>{{ clothes.price|capfirst }}</h1>
+
+<br class="choices">
+{% endblock %}
 
                 

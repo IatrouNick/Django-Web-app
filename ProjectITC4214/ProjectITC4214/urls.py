@@ -10,4 +10,4 @@ urlpatterns = [
 name= 'clothes_detail' ),
 ]
 
-urlpatterns += staticfiles_urlpatterns()
+
