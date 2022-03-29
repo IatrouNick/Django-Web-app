@@ -1,0 +1,27 @@
+{% extends 'headerFooter.html' %}
+
+{% block content %}
+
+
+<br class="choices">
+  <div id="page-container">
+      <div id="content-wrap">
+         {% for c in clothes %}
+         {% if c.id <= 4 %}
+            <div class="items">
+                <li class="list-group-item">      
+                    <a href = "{% url 'clothes_detail' c.id %}" class="list-group-item list-group-item-action list-group-item-primary">
+                    <img src="{{ c.img_url }}" class="imageSize" height="300">
+                   {{ c.typeCloth|capfirst }}
+                    </a>
+                </li>
+            </div>
+            {% endif %}
+        {% endfor %}
+        </div>
+    </div>
+<br class="choices">
+{% endblock %}
+
+
+
